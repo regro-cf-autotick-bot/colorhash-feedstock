@@ -1,5 +1,5 @@
 {% set name = "colorhash" %}
-{% set version = "1.0.4" %}
+{% set version = "1.3.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/colorhash-{{ version }}.tar.gz
-  sha256: 5460c5539b68712c97b09ba41e5200c81dce6e23f4533d0f4f8beafc3eb2fafa
+  sha256: 5dc361ff2f902e2301b20cc02ab570b9e2c3c11d098a03633063c52c0a2619ba
 
 build:
   number: 0
