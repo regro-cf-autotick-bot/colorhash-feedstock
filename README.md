@@ -1,11 +1,11 @@
-About colorhash
-===============
+About colorhash-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/colorhash-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/dimostenis/color-hash-python
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/colorhash-feedstock/blob/main/LICENSE.txt)
 
 Summary: Generate color based on any object
 
