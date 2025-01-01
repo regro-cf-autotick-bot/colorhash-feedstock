@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/colorhash-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/colorhash-{{ version }}.tar.gz
   sha256: 5460c5539b68712c97b09ba41e5200c81dce6e23f4533d0f4f8beafc3eb2fafa
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -19,9 +19,9 @@ requirements:
   host:
     - pip
     - poetry
-    - python >=3.6,<4.0
+    - python {{ python_min }}
   run:
-    - python >=3.6,<4.0
+    - python >={{ python_min }},<4.0
 
 test:
   imports:
@@ -30,6 +30,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/dimostenis/color-hash-python
